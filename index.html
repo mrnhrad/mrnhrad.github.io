@@ -18,6 +18,7 @@
 <input type="checkbox" id="ext2c" onclick="ext2()"><label for = "ext2c">Ryle's tube</label> 
 <input type="checkbox" id="ext3c" onclick="ext3()"><label for = "ext3c">ET tube</label> 
 <input type="checkbox" id="ext4c" onclick="ext4()"><label for = "ext4c">Right central venous line</label> 
+<input type="checkbox" id="ext5c" onclick="ext5()"><label for = "ext5c">Sternotomy sutures</label> 
 </p>
 <p>
 <input type="checkbox" id="lung1c" onclick="lung1()"><label for = "lung1c">Multiple ill defined nonhomogenous opacities</label> 
@@ -32,6 +33,7 @@
 <p id="ext2" style="display:none">* Ryle's tube is noted insitu.</p><br>
 <p id="ext3" style="display:none">* ET tube is noted in situ.</p><br>
 <p id="ext4" style="display:none">* Right central venous line is noted in situ.</p><br>
+<p id="ext5" style="display:none">* Sternotomy sutures are noted.</p><br>
 <p id="lung1" style="display:none">* Multiple ill defined nonhomogenous opacities are noted in</p><br>
 <p id="lung2" style="display:none">* Multiple reticulonodular opacities are noted in</p><br>
 
@@ -105,6 +107,16 @@ function ext3() {
 function ext4() {
   var checkBox = document.getElementById("ext4c");
   var text = document.getElementById("ext4");
+  if (checkBox.checked == true){
+    text.style.display = "inline";
+  } else {
+     text.style.display = "none";
+  }
+}
+  
+  function ext5() {
+  var checkBox = document.getElementById("ext5c");
+  var text = document.getElementById("ext5");
   if (checkBox.checked == true){
     text.style.display = "inline";
   } else {
