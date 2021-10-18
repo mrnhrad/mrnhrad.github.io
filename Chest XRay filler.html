@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div>
+<p>X-RAY CHEST AP VIEW(FOLLOWUP)</p>
+<p>As compared to the previous XRay of </p>
+<p>Rest of the findings remain the same.</p>
+<p>Display text when the checkbox is checked:</p>
+
+<p>
+<input type="checkbox" id="rot1c" onclick="rot1()"><label for = "rot1c">Rotation to right.</label> 
+<input type="checkbox" id="rot2c" onclick="rot2()"><label for = "rot2c">Rotation to left.</label> 
+<input type="checkbox" id="rot3c" onclick="rot3()"><label for = "rot3c">Mid inspiratory.</label> 
+</p>
+<p>
+<input type="checkbox" id="ext1c" onclick="ext1()"><label for = "ext1c">External ICU wiring</label> 
+<input type="checkbox" id="ext2c" onclick="ext2()"><label for = "ext2c">Ryle's tube</label> 
+<input type="checkbox" id="ext3c" onclick="ext3()"><label for = "ext3c">ET tube</label> 
+<input type="checkbox" id="ext4c" onclick="ext4()"><label for = "ext4c">Right central venous line</label> 
+</p>
+<p>
+<input type="checkbox" id="lung1c" onclick="lung1()"><label for = "lung1c">Multiple ill defined nonhomogenous opacities</label> 
+<input type="checkbox" id="lung2c" onclick="lung2()"><label for = "lung2c">Multiple reticulonodular opacities</label> 
+</p>
+
+
+<p id="rot1" style="display:none">* Positional rotation towards right noted.</p><br>
+<p id="rot2" style="display:none">* Positional rotation towards left noted.</p><br>
+<p id="rot3" style="display:none">* Mid inspiratory film is noted.</p><br>
+<p id="ext1" style="display:none">* External ICU wiring is noted.</p><br>
+<p id="ext2" style="display:none">* Ryle's tube is noted insitu.</p><br>
+<p id="ext3" style="display:none">* ET tube is noted in situ.</p><br>
+<p id="ext4" style="display:none">* Right central venous line is noted in situ.</p><br>
+<p id="lung1" style="display:none">* Multiple ill defined nonhomogenous opacities are noted in</p><br>
+<p id="lung2" style="display:none">* Multiple reticulonodular opacities are noted in</p><br>
+
+
+</div>
+<br></br> 
+<div align = "center">
+<button onClick="window.location.reload();">Refresh</button>
+</div>
+
+
+
+<script>
+function rot1() {
+  var checkBox = document.getElementById("rot1c");
+  var text = document.getElementById("rot1");
+  if (checkBox.checked == true){
+    text.style.display = "inline";
+  } else {
+     text.style.display = "none";
+  }
+}
+function rot2() {
+  var checkBox = document.getElementById("rot2c");
+  var text = document.getElementById("rot2");
+  if (checkBox.checked == true){
+    text.style.display = "inline";
+  } else {
+     text.style.display = "none";
+  }
+}
+
+function rot3() {
+  var checkBox = document.getElementById("rot3c");
+  var text = document.getElementById("rot3");
+  if (checkBox.checked == true){
+    text.style.display = "inline";
+  } else {
+     text.style.display = "none";
+  }
+}
+
+function ext1() {
+  var checkBox = document.getElementById("ext1c");
+  var text = document.getElementById("ext1");
+  if (checkBox.checked == true){
+    text.style.display = "inline";
+  } else {
+     text.style.display = "none";
+  }
+}
+function ext2() {
+  var checkBox = document.getElementById("ext2c");
+  var text = document.getElementById("ext2");
+  if (checkBox.checked == true){
+    text.style.display = "inline";
+  } else {
+     text.style.display = "none";
+  }
+}
+function ext3() {
+  var checkBox = document.getElementById("ext3c");
+  var text = document.getElementById("ext3");
+  if (checkBox.checked == true){
+    text.style.display = "inline";
+  } else {
+     text.style.display = "none";
+  }
+}
+
+function ext4() {
+  var checkBox = document.getElementById("ext4c");
+  var text = document.getElementById("ext4");
+  if (checkBox.checked == true){
+    text.style.display = "inline";
+  } else {
+     text.style.display = "none";
+  }
+}
+
+function lung1() {
+  var checkBox = document.getElementById("lung1c");
+  var text = document.getElementById("lung1");
+  if (checkBox.checked == true){
+    text.style.display = "inline";
+  } else {
+     text.style.display = "none";
+  }
+}
+function lung2() {
+  var checkBox = document.getElementById("lung2c");
+  var text = document.getElementById("lung2");
+  if (checkBox.checked == true){
+    text.style.display = "inline";
+  } else {
+     text.style.display = "none";
+  }
+}
+function lung3() {
+  var checkBox = document.getElementById("lung3c");
+  var text = document.getElementById("lung3");
+  if (checkBox.checked == true){
+    text.style.display = "inline";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+<!-- By Sai Kotamraju 2020 -->
+
+</body>
+</html>
